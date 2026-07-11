@@ -1,0 +1,304 @@
+/* ============================================
+   timeline.css — timeline.html
+   ============================================ */
+
+/* ---- Carril de progreso lateral ---- */
+
+.timeline-rail {
+  position: fixed;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(201, 168, 118, 0.2);
+  z-index: 5;
+}
+
+.timeline-rail .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--brass);
+  height: 0%;
+}
+
+@media (max-width: 768px) {
+  .timeline-rail { left: 20px; }
+}
+
+/* ---- Bloques de intro / cierre ---- */
+
+.intro-block {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0 24px;
+}
+
+.intro-block--short {
+  height: 60vh;
+}
+
+.intro-block .eyebrow {
+  margin-bottom: 24px;
+}
+
+.intro-block h1,
+.intro-block h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-size: clamp(40px, 8vw, 100px);
+  line-height: 0.95;
+  max-width: 900px;
+}
+
+.intro-block .sub {
+  margin-top: 28px;
+  font-size: 15px;
+  color: var(--text-dim);
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 40px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--brass);
+  opacity: 0.7;
+}
+
+/* ---- Secciones de consola ---- */
+
+.console-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 80px 0 140px;
+}
+
+.console-year {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(80px, 14vw, 200px);
+  color: rgba(244, 239, 230, 0.06);
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+  z-index: 1;
+  user-select: none;
+}
+
+.console-card {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.console-visual {
+  flex: 0 0 360px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.console-visual::before {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 118, 0.08) 0%, transparent 70%);
+  z-index: -1;
+}
+
+.console-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+.scanlines {
+  position: absolute;
+  inset: -20px;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(244, 239, 230, 0.04) 0px,
+    rgba(244, 239, 230, 0.04) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.console-info .label {
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--moss);
+  margin-bottom: 16px;
+}
+
+.console-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-size: clamp(36px, 5.5vw, 64px);
+  color: var(--paper);
+  line-height: 1.0;
+  margin-bottom: 18px;
+}
+
+.console-meta {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.console-note {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #c9c4ba;
+  line-height: 1.5;
+  max-width: 380px;
+  border-left: 2px solid var(--brick);
+  padding-left: 16px;
+}
+
+/* ---- Transición de década (efecto CRT) ---- */
+
+.decade-transition {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.decade-card {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.decade-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(60px, 10vw, 110px);
+  line-height: 1;
+  color: var(--paper);
+  transform: scaleY(0.02);
+}
+
+.decade-sub {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: var(--moss);
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+.crt-scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(244, 239, 230, 0.08) 0px,
+    rgba(244, 239, 230, 0.08) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  z-index: 2;
+  opacity: 0;
+  mix-blend-mode: overlay;
+}
+
+.crt-flash {
+  position: absolute;
+  inset: 0;
+  background: var(--paper);
+  z-index: 4;
+  opacity: 0;
+}
+
+.crt-sweep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(201, 168, 118, 0.9);
+  box-shadow: 0 0 20px 4px rgba(201, 168, 118, 0.6);
+  top: 50%;
+  z-index: 3;
+  opacity: 0;
+}
+
+/* ---- Responsive: timeline en móvil ---- */
+
+@media (max-width: 768px) {
+  .console-section {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .console-card {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .console-visual {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 50vh;
+    max-height: 420px;
+  }
+
+  .console-visual::before {
+    width: 80%;
+    height: 80%;
+  }
+
+  .console-note {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .console-year {
+    left: 16px;
+    font-size: clamp(50px, 22vw, 100px);
+  }
+
+  /* En móvil evitamos el filtro drop-shadow pesado y usamos una sombra
+     más simple con box-shadow sobre el contenedor, visualmente similar
+     pero más barata de renderizar en hardware limitado */
+  .console-img {
+    filter: none;
+  }
+
+  .console-visual {
+    filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.4));
+  }
+}

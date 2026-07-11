@@ -1,0 +1,140 @@
+/* ============================================
+   menu.css — index.html
+   Menú de inicio estilo arranque de consola retro
+   ============================================ */
+
+.menu-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.menu-header {
+  text-align: center;
+}
+
+.menu-header .eyebrow {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.menu-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(40px, 6vw, 64px);
+  letter-spacing: 0.02em;
+  color: var(--paper);
+}
+
+/* El "marco" que envuelve todo el menú, con doble borde recordando un frame de consola */
+main.menu-screen::before {
+  content: none; /* el frame real vive en .menu-options-wrap si se quiere envolver visualmente */
+}
+
+.menu-options {
+  width: 720px;
+  max-width: 92vw;
+  border: 2px solid var(--panel);
+  border-radius: 6px;
+  padding: 48px 56px;
+  margin-top: 40px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(201, 168, 118, 0.03), transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-options::before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(201, 168, 118, 0.15);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+  position: relative;
+}
+
+.menu-option:hover,
+.menu-option:focus-visible,
+.menu-option.active {
+  background: rgba(201, 168, 118, 0.06);
+}
+
+.menu-option .cursor {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid var(--brass);
+  opacity: 0;
+  flex-shrink: 0;
+}
+
+.menu-option:hover .cursor,
+.menu-option:focus-visible .cursor,
+.menu-option.active .cursor {
+  opacity: 1;
+  animation: cursorBlink 0.8s steps(2) infinite;
+}
+
+@keyframes cursorBlink {
+  50% { opacity: 0.3; }
+}
+
+.option-text {
+  flex: 1;
+}
+
+.option-name {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--paper);
+  margin-bottom: 4px;
+}
+
+.option-desc {
+  display: block;
+  font-size: 13px;
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+}
+
+.option-num {
+  font-size: 12px;
+  color: var(--brick);
+  letter-spacing: 0.1em;
+}
+
+.menu-footer {
+  margin-top: 48px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: rgba(244, 239, 230, 0.3);
+}
+
+/* En móvil, reducimos el padding interno para que respire mejor en pantalla estrecha */
+@media (max-width: 600px) {
+  .menu-options {
+    padding: 32px 28px;
+  }
+
+  .option-name {
+    font-size: 22px;
+  }
+}

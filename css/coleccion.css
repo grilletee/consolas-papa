@@ -1,0 +1,357 @@
+/* ============================================
+   coleccion.css — coleccion.html
+   ============================================ */
+
+main {
+  padding: 50px 60px 140px;
+}
+
+.page-header {
+  margin-bottom: 4px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.page-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+.page-sub {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-bottom: 32px;
+}
+
+/* ---- Toolbar de busqueda ---- */
+
+.toolbar--search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.search {
+  background: var(--panel);
+  border: 1px solid rgba(201, 168, 118, 0.2);
+  border-radius: 4px;
+  padding: 10px 14px;
+  color: var(--paper);
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  width: 240px;
+}
+
+.search::placeholder {
+  color: var(--text-faint);
+}
+
+.filters-toggle {
+  display: none; /* solo visible en movil, ver media query */
+  background: transparent;
+  border: 1px solid rgba(201, 168, 118, 0.3);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--paper);
+}
+
+.count {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--moss);
+  letter-spacing: 0.1em;
+}
+
+.count span {
+  color: var(--brass);
+}
+
+/* ---- Panel de filtros ---- */
+
+.filters-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(201, 168, 118, 0.15);
+}
+
+.filter-group {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-right: 4px;
+  min-width: 80px;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  background: transparent;
+  border: 1px solid rgba(201, 168, 118, 0.3);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  transition: all 0.15s ease;
+}
+
+.pill:hover {
+  border-color: rgba(201, 168, 118, 0.6);
+  color: var(--paper);
+}
+
+.pill.active {
+  background: var(--brass);
+  color: #2C2620;
+  border-color: var(--brass);
+  font-weight: 700;
+}
+
+/* ---- Grid denso ---- */
+
+.grid-dense {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+.card-dense {
+  background: var(--panel);
+  border: none;
+  border-radius: 6px;
+  padding: 16px 14px;
+  position: relative;
+  text-align: left;
+  transition: transform 0.15s ease, background 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-dense:hover,
+.card-dense:focus-visible {
+  transform: translateY(-3px);
+  background: #332f2b;
+}
+
+.card-dense.hidden {
+  display: none;
+}
+
+.year-stamp {
+  font-size: 10px;
+  color: var(--brass);
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  margin-bottom: 14px;
+}
+
+.card-dense .name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  color: var(--paper);
+}
+
+.card-dense .maker {
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---- Estado vacío ---- */
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+}
+
+.empty-state .title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+  margin-bottom: 8px;
+}
+
+.empty-state .hint {
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+/* ---- Overlay de detalle ---- */
+
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 7, 8, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 40px;
+}
+
+.detail-overlay[hidden] {
+  display: none;
+}
+
+.detail-panel {
+  max-width: 880px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.detail-visual {
+  flex: 0 0 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.detail-visual::before {
+  content: '';
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 118, 0.1) 0%, transparent 70%);
+  z-index: -1;
+}
+
+#detailImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+.detail-info h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 56px;
+  letter-spacing: 0.01em;
+  line-height: 1.0;
+  margin: 16px 0 18px;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-meta span {
+  color: var(--brass);
+}
+
+.detail-note {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #c9c4ba;
+  line-height: 1.5;
+  max-width: 380px;
+  border-left: 2px solid var(--brick);
+  padding-left: 16px;
+  margin-bottom: 28px;
+}
+
+.detail-close {
+  background: transparent;
+  border: 1px solid rgba(201, 168, 118, 0.3);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--paper);
+}
+
+.detail-close:hover {
+  border-color: var(--brass);
+  color: var(--brass);
+}
+
+/* ---- Responsive: colección en móvil ---- */
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px 20px 120px;
+  }
+
+  .grid-dense {
+    grid-template-columns: 1fr; /* 1 columna, lista vertical */
+  }
+
+  .card-img {
+    height: 240px;
+  }
+
+  .filters-toggle {
+    display: inline-block; /* aparece el botón "Filtros" */
+  }
+
+  /* El panel se colapsa por defecto en móvil; se expande con la clase .open via JS */
+  .filters-panel {
+    display: none;
+  }
+
+  .filters-panel.open {
+    display: flex;
+  }
+
+  .detail-panel {
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+  }
+
+  .detail-note {
+    margin: 0 auto 28px;
+    text-align: left;
+  }
+}

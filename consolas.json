@@ -1,0 +1,458 @@
+[
+  {
+    "modelo": "GAME & WATCH DONKEY KONG",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 1982,
+    "imagen": "images/game-watch-donkey-kong.jpg",
+    "nota": "La primera consola de la historia en incluir el D-pad, la cruceta que desde entonces llevan todos los mandos del mundo. Vendió más de un millón de unidades, un récord para 1982, y fue también el primer juego de Mario lanzado en una portátil."
+  },
+  {
+    "modelo": "GAME & WATCH PINBALL",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 1983,
+    "imagen": "images/game-watch-pinball.jpg",
+    "nota": "Una máquina de pinball en el bolsillo, con dos pantallas que reproducían la mesa completa. Uno de los 60 títulos de la saga Game & Watch, la misma línea de portátiles que inspiró directamente la creación de la Game Boy."
+  },
+  {
+    "modelo": "FAMICOM",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 1984,
+    "imagen": "images/famicom.jpg",
+    "nota": "La primera Nintendo de sobremesa, lanzada en Japón en 1983. Tuvo un fallo de fábrica tan grave que Nintendo retiró todas las unidades vendidas para repararlas gratis, y aun así acabó vendiendo más de 2,5 millones solo en su primer año."
+  },
+  {
+    "modelo": "MASTER SYSTEM",
+    "tipo": "SOBREMESA",
+    "fabricante": "SEGA",
+    "anio": 1985,
+    "imagen": "images/master-system.jpg",
+    "nota": "Técnicamente más potente que la NES, pero las prácticas de licencia de Nintendo con desarrolladoras le impidieron hacerle sombra en Japón y EE.UU. En Europa y, sobre todo, en Brasil, fue justo al revés: ahí superó a Nintendo durante años."
+  },
+  {
+    "modelo": "NES",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 1986,
+    "imagen": "images/nes.jpg",
+    "nota": "La versión occidental de la Famicom, rediseñada para no parecer \"una consola de videojuegos\" tras el crash de 1983 — por eso se llamó oficialmente \"Control Deck\", no consola. Se convirtió en la más vendida de su tiempo."
+  },
+  {
+    "modelo": "MEGA DRIVE",
+    "tipo": "SOBREMESA",
+    "fabricante": "SEGA",
+    "anio": 1988,
+    "imagen": "images/mega-drive.jpg",
+    "nota": "La que convirtió a Sega en una amenaza real para Nintendo, con la campaña \"Genesis does what Nintendon't\" y Sonic como ariete. Llegó a controlar el 65% del mercado de 16-bit en EE.UU. en su mejor momento."
+  },
+  {
+    "modelo": "PC ENGINE COREGRAFX",
+    "tipo": "SOBREMESA",
+    "fabricante": "NEC",
+    "anio": 1989,
+    "imagen": "images/pc-engine-coregrafx.jpg",
+    "nota": "La revisión de la PC Engine original de NEC, que en su momento llegó a ser la consola más pequeña del mundo. En su lanzamiento japonés de 1987 vendió 500.000 unidades en su primera semana, superando incluso a la Famicom en ventas puntuales de esa época."
+  },
+  {
+    "modelo": "GAME BOY",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 1989,
+    "imagen": "images/game-boy.jpg",
+    "nota": "Pantalla en blanco y negro frente a rivales en color, y aun así arrasó: más barata, con muchas más horas de batería, y con Tetris de regalo. Sigue siendo, contando todas sus variantes, la consola más vendida de la historia."
+  },
+  {
+    "modelo": "SUPER FAMICOM",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 1990,
+    "imagen": "images/super-famicom.png",
+    "nota": "Las primeras 300.000 unidades se agotaron en Japón en pocas horas el día de lanzamiento. Fue tal el alboroto que el gobierno japonés pidió a las compañías que lanzaran consolas en fin de semana a partir de entonces."
+  },
+  {
+    "modelo": "SUPER NINTENDO",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 1990,
+    "imagen": "images/super-nintendo.jpg",
+    "nota": "Las primeras 300.000 unidades se agotaron en Japón en pocas horas el día de lanzamiento. Fue tal el alboroto que el gobierno japonés pidió a las compañías que lanzaran consolas en fin de semana a partir de entonces."
+  },
+  {
+    "modelo": "GAME GEAR",
+    "tipo": "PORTATIL",
+    "fabricante": "SEGA",
+    "anio": 1990,
+    "imagen": "images/game-gear.jpg",
+    "nota": "La apuesta portátil de Sega contra la Game Boy: pantalla en color y mejor hardware, pero el doble de pilas y mucha menos batería — la eterna pelea entre potencia y autonomía."
+  },
+  {
+    "modelo": "MEGA DRIVE 2",
+    "tipo": "SOBREMESA",
+    "fabricante": "SEGA",
+    "anio": 1993,
+    "imagen": "images/mega-drive-2.png",
+    "nota": "El rediseño económico de la Mega Drive original, más pequeño y sin el puerto de expansión para el Mega-CD — una versión pensada para alargar la vida comercial de la consola en su recta final."
+  },
+  {
+    "modelo": "SATURN",
+    "tipo": "SOBREMESA",
+    "fabricante": "SEGA",
+    "anio": 1994,
+    "imagen": "images/saturn.jpg",
+    "nota": "Una arquitectura de doble procesador que resultaba muy difícil de programar bien, lo que terminó beneficiando a su rival directo, la PlayStation. Vendió 9,3 millones de unidades en todo el mundo, lejos de los 102 millones de la consola de Sony."
+  },
+  {
+    "modelo": "PLAY STATION",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 1994,
+    "imagen": "images/play-station.jpg",
+    "nota": "La entrada de Sony en los videojuegos, nacida de una alianza fallida con Nintendo que terminó en ruptura. Vendió más de 100 millones de unidades y fue la primera consola en la historia en alcanzar esa cifra."
+  },
+  {
+    "modelo": "GAME BOY POCKET",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 1996,
+    "imagen": "images/game-boy-pocket.jpg",
+    "nota": "La primera gran reducción de tamaño de la familia Game Boy, llegada el mismo año que la Nintendo 64."
+  },
+  {
+    "modelo": "NINTENDO 64",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 1996,
+    "imagen": "images/nintendo-64.jpg",
+    "nota": "Lanzada con solo dos juegos en su catálogo (Super Mario 64 y Pilotwings 64) — y con eso bastó. El cartucho, no el disco, seguía siendo el rey en esta generación."
+  },
+  {
+    "modelo": "GAME BOY COLOR",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 1998,
+    "imagen": "images/game-boy-color.png",
+    "nota": "Llegó con pantalla en color y el doble de procesador que la original, manteniendo compatibilidad con todos los cartuchos anteriores. Pokémon Oro y Plata, sus juegos más vendidos, sumaron 23 millones de copias."
+  },
+  {
+    "modelo": "DREAMCAST",
+    "tipo": "SOBREMESA",
+    "fabricante": "SEGA",
+    "anio": 1998,
+    "imagen": "images/dreamcast.jpg",
+    "nota": "La última consola de sobremesa de Sega, y la primera del mundo con módem integrado de fábrica para jugar online. Vendió 500.000 unidades en sus primeras dos semanas en EE.UU. — un récord en su momento — pero no fue suficiente para sobrevivir a la llegada de la PS2."
+  },
+  {
+    "modelo": "GAME BOY COLOR VERDE",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 1998,
+    "imagen": "images/game-boy-color-verde.jpg",
+    "nota": "La variante Kiwi de la Game Boy Color, el modelo verde que se convirtió en uno de los colores más reconocibles de la familia. Misma pantalla en color y compatibilidad total con los cartuchos originales de Game Boy."
+  },
+  {
+    "modelo": "NEO GEO POCKET COLOR",
+    "tipo": "PORTATIL",
+    "fabricante": "SNK",
+    "anio": 1999,
+    "imagen": "images/neo-geo-pocket-color.png",
+    "nota": "La apuesta portátil de SNK, con un \"clicky stick\" de estilo arcade muy alabado por los jugadores de lucha. Llegó el mismo mes que la Game Boy Color y nunca pudo recuperarse de esa coincidencia — SNK quebró poco después."
+  },
+  {
+    "modelo": "WONDER SWAN COLOR",
+    "tipo": "PORTATIL",
+    "fabricante": "BANDAI",
+    "anio": 2000,
+    "imagen": "images/wonder-swan-color.png",
+    "nota": "Diseñada por Gunpei Yokoi, el mismo creador de la Game Boy, tras dejar Nintendo. Competía directamente contra su propia obra anterior, pero nunca salió de Japón ni logró hacerle sombra a su rival."
+  },
+  {
+    "modelo": "PLAY STATION 2",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 2000,
+    "imagen": "images/play-station-2.jpg",
+    "nota": "La consola más vendida de toda la historia, con unos 155-160 millones de unidades. Buena parte de su éxito se debe a que también reproducía DVDs, algo que en el año 2000 costaba casi lo mismo por separado."
+  },
+  {
+    "modelo": "XBOX",
+    "tipo": "SOBREMESA",
+    "fabricante": "MICROSOFT",
+    "anio": 2001,
+    "imagen": "images/xbox.png",
+    "nota": "La entrada de Microsoft en los videojuegos, con un procesador más potente que el de PS2 o GameCube y un disco duro integrado de fábrica — algo inédito en su momento. Vendió un millón de unidades en sus primeras tres semanas en EE.UU."
+  },
+  {
+    "modelo": "GAME BOY ADVANCE",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2001,
+    "imagen": "images/game-boy-advance.png",
+    "nota": "En su semana de lanzamiento en Europa vendió 500.000 unidades, marcando el ritmo de venta más rápido para una consola hasta ese momento."
+  },
+  {
+    "modelo": "GAME BOY ADVANCE AZUL",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2001,
+    "imagen": "images/game-boy-advance-azul.jpg",
+    "nota": "En su semana de lanzamiento en Europa vendió 500.000 unidades, marcando el ritmo de venta más rápido para una consola hasta ese momento."
+  },
+  {
+    "modelo": "GAME CUBE",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 2001,
+    "imagen": "images/game-cube.jpg",
+    "nota": "La primera consola de Nintendo en usar discos en lugar de cartuchos. Se vendió a 200 dólares, el precio más bajo de toda su generación frente a PS2 y Xbox."
+  },
+  {
+    "modelo": "GAME BOY ADVANCE SP",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2003,
+    "imagen": "images/game-boy-advance-sp.png",
+    "nota": "La primera Game Boy con diseño de concha plegable y batería recargable de fábrica — adiós a las pilas."
+  },
+  {
+    "modelo": "PSP",
+    "tipo": "PORTATIL",
+    "fabricante": "SONY",
+    "anio": 2004,
+    "imagen": "images/psp.jpg",
+    "nota": "La primera gran amenaza seria al monopolio portátil de Nintendo, con gráficos cercanos a los de una PS2 de bolsillo. Vendió cerca de 80 millones de unidades, aunque se quedó muy por detrás de la Nintendo DS."
+  },
+  {
+    "modelo": "PLAY STATION 2 SLIM",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 2004,
+    "imagen": "images/play-station-2-slim.jpg",
+    "nota": "La versión reducida de la PS2, lanzada con puertos de red ya integrados de fábrica — llegó justo cuando el juego online empezaba a importar de verdad."
+  },
+  {
+    "modelo": "XBOX 360",
+    "tipo": "SOBREMESA",
+    "fabricante": "MICROSOFT",
+    "anio": 2005,
+    "imagen": "images/xbox-360.png",
+    "nota": "La consola que cimentó a Xbox como rival serio de Sony, lanzada un año antes que la PS3. Su gran mancha fue el \"Anillo Rojo de la Muerte\" — un fallo de hardware tan extendido que le costó a Microsoft más de 1.000 millones de dólares en reparaciones."
+  },
+  {
+    "modelo": "GAME BOY MICRO",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2005,
+    "imagen": "images/game-boy-micro.png",
+    "nota": "La más pequeña y la última de la familia Game Boy. Solo reproducía juegos de Advance, ni rastro de compatibilidad con los cartuchos clásicos."
+  },
+  {
+    "modelo": "DS LITE",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2006,
+    "imagen": "images/ds-lite.jpg",
+    "nota": "Más de la mitad de todas las Nintendo DS vendidas en el mundo fueron este modelo. En su mes de lanzamiento en EE.UU. rompió el récord histórico de hardware de videojuegos vendido en un mes."
+  },
+  {
+    "modelo": "WII",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 2006,
+    "imagen": "images/wii.jpg",
+    "nota": "Con un mando que convertía cualquier salón en pista de bolos, tenis o boxeo, superó en ventas a PS3 y Xbox 360 juntas durante su primer año en EE.UU."
+  },
+  {
+    "modelo": "PLAY STATION 3",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 2006,
+    "imagen": "images/play-station-3.png",
+    "nota": "La PlayStation más cara jamás lanzada (599 dólares en su versión de 60GB) y la que más le costó arrancar a Sony, aunque terminó vendiendo más de 87 millones gracias a su catálogo de los últimos años."
+  },
+  {
+    "modelo": "PSP SLIM",
+    "tipo": "PORTATIL",
+    "fabricante": "SONY",
+    "anio": 2007,
+    "imagen": "images/psp-slim.png",
+    "nota": "La PSP-2000, un 43% más ligera que el modelo original y la primera de la familia en poder sacar vídeo a una televisión."
+  },
+  {
+    "modelo": "DSI",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2008,
+    "imagen": "images/dsi.jpg",
+    "nota": "La primera Nintendo portátil con cámara integrada y tienda digital propia, aunque perdió la compatibilidad con los cartuchos de Game Boy Advance por el camino."
+  },
+  {
+    "modelo": "3DS",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2011,
+    "imagen": "images/3ds.jpg",
+    "nota": "Llegó con la promesa del 3D sin gafas y un precio tan alto que Nintendo tuvo que bajarlo 80 dólares solo cinco meses después de su lanzamiento — uno de los recortes de precio más rápidos en la historia de las portátiles."
+  },
+  {
+    "modelo": "PS VITA",
+    "tipo": "PORTATIL",
+    "fabricante": "SONY",
+    "anio": 2011,
+    "imagen": "images/ps-vita.jpg",
+    "nota": "La portátil más potente jamás construida por Sony hasta entonces, con pantalla OLED y doble joystick. Pese a su calidad técnica, vendió solo una fracción de lo que vendió su rival, la Nintendo 3DS — Sony no ha vuelto a lanzar otra portátil desde entonces."
+  },
+  {
+    "modelo": "WII -U",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 2012,
+    "imagen": "images/wii-u.png",
+    "nota": "El sucesor de la Wii nunca encontró su público — mucha gente pensó que era solo un accesorio para la Wii, no una consola nueva. Acabó vendiendo 13,5 millones de unidades en toda su vida, bastante menos de lo esperado."
+  },
+  {
+    "modelo": "PLAY STATION 3 SUPER SLIM",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 2012,
+    "imagen": "images/play-station-3-super-slim.jpg",
+    "nota": "La última y más compacta revisión de la PS3, llegada un año antes de que Sony pasara el relevo a la PS4."
+  },
+  {
+    "modelo": "PLAY STATION 4 PRO",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 2016,
+    "imagen": "images/play-station-4-pro.png",
+    "nota": "La primera PlayStation pensada para sacar más partido a las televisiones 4K, a mitad de generación de la PS4 original."
+  },
+  {
+    "modelo": "XBOX ONE X",
+    "tipo": "SOBREMESA",
+    "fabricante": "MICROSOFT",
+    "anio": 2017,
+    "imagen": "images/xbox-one-x.jpg",
+    "nota": "La consola más potente de su generación en el momento de su lanzamiento, pensada para sacarle todo el partido a la resolución 4K."
+  },
+  {
+    "modelo": "2DS XL",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2017,
+    "imagen": "images/2ds-xl.jpg",
+    "nota": "La versión \"sin 3D\" de la familia 3DS, pensada para quienes preferían un precio más bajo y se saltaban el efecto estereoscópico sin echarlo en falta."
+  },
+  {
+    "modelo": "SUPERNES MINI",
+    "tipo": "SOBREMESA",
+    "fabricante": "NINTENDO",
+    "anio": 2017,
+    "imagen": "images/supernes-mini.jpg",
+    "nota": "Una réplica en miniatura de la Super Nintendo con 21 juegos integrados, incluyendo Star Fox 2 — un juego que estuvo cancelado durante más de 20 años y que debutó oficialmente aquí."
+  },
+  {
+    "modelo": "SWITCH",
+    "tipo": "SOBREMESA/PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2017,
+    "imagen": "images/switch.jpg",
+    "nota": "La apuesta híbrida de \"sobremesa y portátil en una sola consola\". Acabó convirtiéndose en la segunda consola más vendida de la historia de Nintendo, solo por detrás de la DS."
+  },
+  {
+    "modelo": "RASPBERRY PI 3 B+",
+    "tipo": "SOBREMESA",
+    "fabricante": "RASPBERRY",
+    "anio": 2018,
+    "imagen": "images/raspberry-pi-3-b.jpg",
+    "nota": "No nació pensada para videojuegos — es un ordenador de placa reducida usado en mil proyectos distintos — pero su popularidad para montar emuladores domésticos la convirtió, casi por accidente, en una pieza habitual de cualquier colección retro."
+  },
+  {
+    "modelo": "PS CLASSIC MINI",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 2018,
+    "imagen": "images/ps-classic-mini.jpg",
+    "nota": "Una réplica en miniatura de la PlayStation original con 20 juegos preinstalados, parte de la moda de \"mini consolas\" que arrancó Nintendo con su NES Classic."
+  },
+  {
+    "modelo": "SWITCH LITE",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2019,
+    "imagen": "images/switch-lite.jpg",
+    "nota": "Solo portátil, sin posibilidad de conectarse a la TV, pero más barata y con mejor batería. Vendió casi 2 millones de unidades en sus primeros diez días en el mercado."
+  },
+  {
+    "modelo": "MEGA DRIVE MINI",
+    "tipo": "SOBREMESA",
+    "fabricante": "SEGA",
+    "anio": 2019,
+    "imagen": "images/mega-drive-mini.jpg",
+    "nota": "La réplica en miniatura de la Mega Drive original, parte de la misma ola retro que las versiones mini de NES y SNES — con la nostalgia ya convertida en su propio mercado."
+  },
+  {
+    "modelo": "XBOX SERIES S",
+    "tipo": "SOBREMESA",
+    "fabricante": "MICROSOFT",
+    "anio": 2020,
+    "imagen": "images/xbox-series-s.jpg",
+    "nota": "La versión más asequible de la generación Series, lanzada el mismo día que su hermana mayor, la Series X, y solo dos días antes que la PS5."
+  },
+  {
+    "modelo": "PLAY STATION 5",
+    "tipo": "SOBREMESA",
+    "fabricante": "SONY",
+    "anio": 2020,
+    "imagen": "images/play-station-5.png",
+    "nota": "Llegó solo dos días después de la Xbox Series X/S y se convirtió en la PlayStation de más rápida venta en su año de lanzamiento, a pesar de una escasez de stock que duró casi dos años por la crisis mundial de semiconductores."
+  },
+  {
+    "modelo": "GAME & WATCH MARIO",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2020,
+    "imagen": "images/game-watch-mario.jpg",
+    "nota": "Edición especial por el 35 aniversario de Super Mario Bros., con tres juegos integrados y un reloj con 35 animaciones distintas. La primera revisión de la línea Game & Watch en casi 30 años — una pieza de colección desde el primer día."
+  },
+  {
+    "modelo": "AMBERNIC 351 P",
+    "tipo": "PORTATIL",
+    "fabricante": "AMBERNIC",
+    "anio": 2021,
+    "imagen": "images/ambernic-351-p.jpg",
+    "nota": "No es una consola \"original\" — es un emulador de bolsillo capaz de revivir NES, SNES, Game Boy, Mega Drive y PlayStation desde una sola tarjeta microSD. La pieza más moderna de la colección, y la única que contiene, en cierto modo, a todas las demás."
+  },
+  {
+    "modelo": "GAME & WATCH ZELDA",
+    "tipo": "PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2021,
+    "imagen": "images/game-watch-zelda.jpg",
+    "nota": "Edición especial por el 35 aniversario de The Legend of Zelda, con tres juegos clásicos de Zelda integrados. Llegó un año después de la edición de Mario, completando el dúo de revisiones modernas de la línea Game & Watch."
+  },
+  {
+    "modelo": "META QUEST 3",
+    "tipo": "VISOR RV",
+    "fabricante": "META",
+    "anio": 2023,
+    "imagen": "images/meta-quest-3.jpg",
+    "nota": "Un visor de realidad mixta, no una consola de videojuegos al uso — la pieza más distinta de toda la colección. Dobla la potencia gráfica de su predecesor y fue el primero en usar el chip Snapdragon XR2 Gen 2."
+  },
+  {
+    "modelo": "THE SPECTRUM",
+    "tipo": "SOBREMESA",
+    "fabricante": "RETROGAMES",
+    "anio": 2024,
+    "imagen": "images/the-spectrum.jpg",
+    "nota": "La recreación más fiel hasta la fecha del ZX Spectrum original de 1982, con teclado de goma funcional idéntico al de Sir Clive Sinclair y 48 juegos integrados, incluyendo clásicos como Manic Miner y The Hobbit."
+  },
+  {
+    "modelo": "SWITCH 2",
+    "tipo": "SOBREMESA/PORTATIL",
+    "fabricante": "NINTENDO",
+    "anio": 2025,
+    "imagen": "images/switch-2.png",
+    "nota": "La consola de Nintendo de más rápida venta jamás registrada: 3,5 millones de unidades en sus primeros cuatro días en el mercado."
+  }
+]

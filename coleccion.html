@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La colección — Ficha completa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital@1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/coleccion.css">
+</head>
+<body>
+
+  <main>
+
+    <header class="page-header">
+      <h1 class="page-title">LA COLECCIÓN</h1>
+      <p class="page-sub">52 piezas, ordenables por fabricante, tipo y década</p>
+    </header>
+
+    <!-- Buscador -->
+    <div class="toolbar toolbar--search">
+      <input type="text" id="searchInput" class="search" placeholder="Buscar consola..." autocomplete="off">
+      <button id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="filtersPanel">
+        Filtros
+      </button>
+      <p class="count"><span id="visibleCount">52</span> / 52 visibles</p>
+    </div>
+
+    <!-- Panel de filtros: visible siempre en desktop, colapsable en movil via JS/CSS -->
+    <div id="filtersPanel" class="filters-panel">
+
+      <fieldset class="filter-group" data-filter-group="fabricante">
+        <legend class="filter-label">Fabricante</legend>
+        <div class="pill-row" id="filterFabricante">
+          <button class="pill active" data-value="todos">Todos</button>
+          <!-- el resto de pills de fabricante se generan por JS desde consolas.json -->
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-group" data-filter-group="tipo">
+        <legend class="filter-label">Tipo</legend>
+        <div class="pill-row" id="filterTipo">
+          <button class="pill active" data-value="todos">Todos</button>
+          <button class="pill" data-value="sobremesa">Sobremesa</button>
+          <button class="pill" data-value="portatil">Portátil</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-group" data-filter-group="decada">
+        <legend class="filter-label">Década</legend>
+        <div class="pill-row" id="filterDecada">
+          <button class="pill active" data-value="todos">Todas</button>
+          <!-- las decadas reales se generan por JS segun los anios presentes en consolas.json -->
+        </div>
+      </fieldset>
+
+    </div>
+
+    <!-- Grid principal, poblado por JS -->
+    <div class="grid-dense" id="grid"></div>
+
+    <!-- Estado vacio, oculto por defecto -->
+    <div class="empty-state" id="emptyState" hidden>
+      <p class="title">No hay consolas que coincidan</p>
+      <p class="hint">Prueba a quitar algún filtro o cambiar la búsqueda</p>
+    </div>
+
+  </main>
+
+  <a href="index.html" class="back-to-menu">← Volver al menú</a>
+
+  <!-- Overlay de detalle de consola -->
+  <div class="detail-overlay" id="detailOverlay" hidden>
+    <div class="detail-panel">
+      <div class="detail-visual">
+        <img id="detailImg" src="" alt="">
+      </div>
+      <div class="detail-info">
+        <p class="eyebrow" id="detailTipo"></p>
+        <h2 id="detailName"></h2>
+        <p class="detail-meta">
+          <span id="detailMaker"></span> · <span id="detailYear"></span>
+        </p>
+        <p class="detail-note" id="detailNote"></p>
+        <button class="detail-close" id="detailClose">← Volver a la colección</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Plantilla de tarjeta, clonada por JS -->
+  <template id="cardTemplate">
+    <button class="card-dense" type="button">
+      <span class="year-stamp"></span>
+      <img class="card-img" src="" alt="">
+      <span class="name"></span>
+      <span class="maker"></span>
+    </button>
+  </template>
+
+  <script src="js/data.js"></script>
+  <script src="js/coleccion.js"></script>
+</body>
+</html>

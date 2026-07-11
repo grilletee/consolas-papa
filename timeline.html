@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El recorrido — La Colección</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital@1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/timeline.css">
+</head>
+<body>
+
+  <!-- Indicador de progreso del scroll, se rellena con JS -->
+  <div class="timeline-rail" aria-hidden="true">
+    <div class="progress" id="railProgress"></div>
+  </div>
+
+  <main id="timelineRoot">
+
+    <!-- Intro -->
+    <section class="intro-block">
+      <p class="eyebrow">57 piezas · 1982—2025</p>
+      <h1>Una colección,<br>contada en orden.</h1>
+      <p class="sub">Cada consola que pasó por esta casa, ordenada por su año de lanzamiento.</p>
+      <p class="scroll-hint">↓ scroll para empezar</p>
+    </section>
+
+    <!--
+      Las secciones de cada consola y las transiciones de década se
+      inyectan aquí dinámicamente desde js/timeline.js, leyendo consolas.json.
+      No se hardcodea ninguna consola en este HTML.
+    -->
+    <div id="timelineContent"></div>
+
+    <!-- Cierre -->
+    <section class="intro-block intro-block--short">
+      <h2>Eso es todo, de momento.</h2>
+      <p class="sub">La colección sigue creciendo.</p>
+    </section>
+
+  </main>
+
+  <a href="index.html" class="back-to-menu">← Volver al menú</a>
+
+  <!-- Plantilla reutilizable para cada consola, clonada por JS -->
+  <template id="consoleTemplate">
+    <section class="console-section">
+      <div class="console-year" aria-hidden="true"></div>
+      <div class="console-card">
+        <div class="console-visual">
+          <div class="scanlines" aria-hidden="true"></div>
+          <img class="console-img" src="" alt="">
+        </div>
+        <div class="console-info">
+          <p class="label"></p>
+          <h2 class="console-name"></h2>
+          <p class="console-meta"></p>
+          <p class="console-note"></p>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <!-- Plantilla para la transición de década (efecto CRT) -->
+  <template id="decadeTemplate">
+    <section class="decade-transition">
+      <div class="crt-flash" aria-hidden="true"></div>
+      <div class="crt-sweep" aria-hidden="true"></div>
+      <div class="crt-scanlines" aria-hidden="true"></div>
+      <div class="decade-card">
+        <p class="decade-label"></p>
+        <p class="decade-sub"></p>
+      </div>
+    </section>
+  </template>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/timeline.js"></script>
+</body>
+</html>
